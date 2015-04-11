@@ -1,0 +1,17 @@
+# humanstxt.org/
+# The humans responsible & technology colophon
+
+# TEAM
+
+	Cleiton Piccini -- Developer -- @cleitonPiccini
+    Gabriel Henrique Rudey -- Developer -- @whothey_ / @whothey
+    Tiago Adalberto Debastiani -- Developer -- @TADebastiani
+
+# THANKS
+
+    Federal University of Fronteira Sul - UFFS
+
+# TECHNOLOGY COLOPHON
+
+    CSS3, HTML5
+    Apache Server Configs, jQuery, Materialize CSS
