@@ -3,18 +3,24 @@
 	<head>
 		<title>Seminario Tecnologias Web</title>
 		<link rel="stylesheet" type="text/css" href="css/main.min.css">
+		<link rel="stylesheet" type="text/css" href="css/custom.css">
 	</head>
 	<body>
 		<div class="container">
 			<h3>Integrantes</h3>
 			<ul>
-				<li><a class="waves-effect waves-light btn" target="_blank" href="#">Cleiton Piccini</a></li>
-				<li><a class="waves-effect waves-light btn" target="_blank" href="http://whothey.github.io">Gabriel Henrique Rudey</a></li>
-				<li><a class="waves-effect waves-light btn" target="_blank" href="http://tsukini.github.io">Tiago Adalberto Debastiani</a></li>
+				<li><a class="waves-effect waves-light btn" target="_blank" href="#">Cleiton Piccini</a><div class="controller" id="btO"></div></li>
+				<li><a class="waves-effect waves-light btn" target="_blank" href="http://whothey.github.io">Gabriel Henrique Rudey</a><div class="controller" id="btU"></div></li>
+				<li><a class="waves-effect waves-light btn" target="_blank" href="http://tsukini.github.io">Tiago Adalberto Debastiani</a><div class="controller" id="btY"></div></li>
 			</ul>
 		</div>
+		<!--Gamepad test-->
+		<div class="controller" id="gamepadPrompt"></div>
+		<div class="controller" id="gamepadDisplay"></div>
+		<!---->
 
 		<script src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
 		<script src="js/bin/materialize.min.js"></script>
+		<script type="text/javascript" src="js/gamepad.js"></script>
 	</body>
 </html>

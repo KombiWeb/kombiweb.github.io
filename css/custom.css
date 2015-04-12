@@ -1,0 +1,37 @@
+.controller {
+	display: none;
+}
+
+#btO {
+	position: relative;
+	background: url('../images/OUYA_BUTTONS.png') no-repeat -35px -63px;
+	background-size: 396px 306px;
+	width: 29px;
+	height: 29px;
+	/*display: inline-block;*/
+}
+
+#btU {
+	background: url('../images/OUYA_BUTTONS.png') no-repeat -109px -63px;
+	background-size: 396px 306px;
+	width: 29px;
+	height: 29px;
+	/*display: inline-block;*/
+}
+
+#btY {
+	background: url('../images/OUYA_BUTTONS.png') no-repeat -182px -63px;
+	background-size: 396px 306px;
+	width: 29px;
+	height: 29px;
+	/*display: inline-block;*/
+}
+
+#btA {
+	background: url('../images/OUYA_BUTTONS.png') no-repeat -256px -64px;
+	background-size: 396px 306px;
+	width: 29px;
+	height: 29px;
+	/*display: inline-block;*/
+}
+
