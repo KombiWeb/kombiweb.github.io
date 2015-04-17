@@ -1,2 +1,4 @@
 /tests
 /sass/.sass-cache
+/node_modules
+/js/dev
