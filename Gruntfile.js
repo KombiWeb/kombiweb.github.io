@@ -14,11 +14,6 @@ grunt.initConfig({
 		main: {
 			src: ["js/src/init.js"],
 			dest: "js/dev/main.js"
-		},
-
-		materialize: {
-			src: ["js/vendor/materialize/**/*.js"],
-			dest: "js/dev/materialize.js"
 		}
 	},
 
@@ -26,11 +21,6 @@ grunt.initConfig({
 		main: {
 			files: {
 				"js/dist/main.min.js": ['js/dev/main.js']
-			}
-		},
-		materialize: {
-			files: {
-				"js/dist/materialize.min.js": ['js/dev/materialize.js']
 			}
 		}
 	}
