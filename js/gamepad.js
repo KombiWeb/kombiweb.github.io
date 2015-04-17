@@ -1,11 +1,11 @@
-var hasGP = false;
-var repGP;
-var showBut;
-
+var hasGP = false,
+	showBut,
+	repGP;
 
 function canGame() {
 	return "getGamepads" in navigator;
 }
+//Test the inputs of the Gamepad
 
 function reportOnGamepad() {
 	var gp = navigator.getGamepads()[0];
@@ -13,7 +13,7 @@ function reportOnGamepad() {
 	html += "id: "+gp.id+"<br/>";
 
 	for(var i=0;i<gp.buttons.length;i++) {
-		html+= "Button "+(i+1)+": ";
+		html+= "Button "+(i)+": ";
 		if(gp.buttons[i].pressed) html+= " pressed";
 		html+= "<br/>";
 	}
@@ -24,6 +24,7 @@ function reportOnGamepad() {
 
 	$("#gamepadDisplay").html(html);
 }
+
 
 function buttonPressed(b) {
 	if (typeof(b) == "object") {
@@ -36,16 +37,19 @@ $(document).ready(function() {
 	
 	if(canGame()) {
 
-		var prompt = "To begin using your gamepad, connect it and press any button!";
-
-		$("#gamepadPrompt").text(prompt);
-
 		$(window).on("gamepadconnected", function() {
 			hasGP = true;
 			gpConnected = true;
-			alert("Conected controller: "+navigator.getGamepads()[0].id+"\n\n Press 'O' to continue!");
-			$("#gamepadPrompt").html("Gamepad connected!");
-			$(".controller").show();
+
+			Materialize.toast('Controller Conected', 3000,'rounded',function(){
+				Materialize.toast('ID: '+navigator.getGamepads()[0].id, 3500, 'rounded');
+			});
+
+			//alert("Conected controller: "+navigator.getGamepads()[0].id+"\n\n Press 'O' to continue!");
+
+			//$(".controller").show();
+			$('.controller').fadeTo('slow', 1, function() {});
+
 			console.log("connection event");
 			repGP = window.setInterval(reportOnGamepad,100);
 			showBut = window.setInterval(buttonsEvent,100);
@@ -54,7 +58,7 @@ $(document).ready(function() {
 		$(window).on("gamepaddisconnected", function() {
 			gpConnected = false;
 			console.log("disconnection event");
-			$("#gamepadPrompt").text(prompt);
+			Materialize.toast('Controller Disconected', 3000,'rounded');
 			$(".controller").hide();
 			window.clearInterval(repGP);
 			window.clearInterval(showBut);
@@ -75,15 +79,22 @@ $(document).ready(function() {
 function buttonsEvent() {
 	var gp = navigator.getGamepads()[0];
 
-	if (gp.buttons[0].pressed) { //button O
+	if (gp.buttons[5].pressed) {
+		if (gp.buttons[0].pressed) {
+			console.log('pressed');
+		}
+	}
+
+	else if (gp.buttons[0].pressed) { //button reportOnGamepad
 		window.location.href = "#";
 	}
 
-	if (gp.buttons[1].pressed) { //button U
+	else if (gp.buttons[1].pressed) { //button U
 		window.location.href = "http://whothey.github.io";
 	}
 
-	if (gp.buttons[2].pressed) { //button Y
+	else if (gp.buttons[2].pressed) { //button Y
 		window.location.href = "http://tsukini.github.io";
 	}
+
 }
