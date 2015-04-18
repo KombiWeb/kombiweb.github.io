@@ -2,11 +2,29 @@
 <html>
 	<head>
 		<title>Seminario Tecnologias Web</title>
+		<meta charset="utf-8">
 		<link rel="stylesheet" type="text/css" href="css/main.min.css">
 		<link rel="stylesheet" type="text/css" href="css/custom.css">
 	</head>
 	<body>
+		<nav>
+			<div class="nav-wrapper">
+			<a href="#" data-activates="mobile-sidenav" class="button-collapse"><i class="mdi-navigation-menu"></i></a>
+				<a class="brand-logo" href="/">KombiWeb</a>
+				<ul id="nav-mobile" class="right hide-on-med-and-down">
+					<li><a href="/html5.html">HTML5</a></li>
+					<li><a href="/css3.html">CSS3</a></li>
+					<li><a href="/jsapi.html">JS API</a></li>
+				</ul>
+				<ul id="mobile-sidenav" class="side-nav">
+					<li><a href="/html5.html">HTML5</a></li>
+					<li><a href="/css3.html">CSS3</a></li>
+					<li><a href="/jsapi.html">JS API</a></li>
+				</ul>
+			</div>
+		</nav>
 		<div class="container">
+			<h1>Seminário de Tecnologias Web</h1>
 			<h3>Integrantes</h3>
 			<ul>
 				<li><a id="btcleiton" class="waves-effect waves-light btn" href="#"><div class="controller controller-btn" id="btO"></div>Cleiton Piccini</a></li>
@@ -20,7 +38,9 @@
 		<!---->
 
 		<script src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
-		<script src="js/bin/materialize.min.js"></script>
 		<script type="text/javascript" src="js/gamepad.js"></script>
+		<script src="js/dist/materialize.min.js"></script>
+		<script src="js/dist/main.min.js"></script>
+
 	</body>
 </html>
