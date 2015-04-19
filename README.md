@@ -38,10 +38,12 @@ Enable to, any updates on JS files, the "recompiling" to main.min.js:
 Enable to, any updates on SCSS/SASS files, the "recompiling" to main.min.css:
 ```sh
 	cd ../project/root
-	sass --watch main.scss:../css/main.min.css --style compressed
+	sass --watch sass/main.scss:../css/main.min.css --style compressed
 ```
 
 ## Team
 [@cleitonPiccini](https://github.com/cleitonPiccini) (Cleiton Piccini)
+
 [@whothey](https://github.com/whothey) (Gabriel Henrique Rudey)
+
 [@TADebastiani](https://github.com/TADebastiani) (Tiago Adalberto Debastiani)
