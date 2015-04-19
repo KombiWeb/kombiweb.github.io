@@ -12,7 +12,10 @@ grunt.initConfig({
 		},
 
 		main: {
-			src: ["js/src/init.js"],
+			src: [
+				"js/src/fullscreen_handler.js",
+				"js/src/init.js",
+			],
 			dest: "js/dev/main.js"
 		}
 	},
