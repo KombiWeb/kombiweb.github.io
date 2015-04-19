@@ -1,0 +1,140 @@
+
+#btcleiton, #btucra, #bttiago {
+	overflow: visible;
+}
+
+.controller-axes-Yscroll {
+	position: fixed;
+	display: block;
+	overflow: visible;
+	right: 0px;
+	top: 50%;
+}
+
+.controller-axes-Xscroll {
+	position: fixed;
+	display: block;
+	overflow: visible;
+	left: 50%;
+	bottom: 0px;
+}
+
+.controller-btn {
+	position: absolute;
+	float: left;
+	display: block;
+	left: -10px;
+	overflow: visible;
+	margin-top: 2px;
+}
+
+.controller-btn-lb {
+	position: absolute;
+	float: left;
+	display: block;
+	overflow: visible;
+	margin-left: -50px;
+	margin-top: 10px;
+}
+
+.controller-menu {
+	position: absolute;
+	float: left;
+	display: block;
+	overflow: visible;
+	bottom: -6px;
+	margin-left: 5px;
+}
+
+.controller-nav-mobile {
+	position: absolute;
+	float: left;
+	display: block;
+	left: 50px;
+	top: 15px;
+	overflow: visible;
+	
+}
+
+.controller-nav {
+	position: absolute;
+	float: left;
+	display: block;
+	right: 10px;
+	top: 70px;
+	overflow: visible;
+}
+
+.controller {
+	display: none;
+}
+
+#btO {
+	background: url('../images/OUYA_BUTTONS.png') no-repeat -35px -63px;
+	background-size: 396px 306px;
+	width: 29px;
+	height: 29px;
+}
+
+#btU {
+	background: url('../images/OUYA_BUTTONS.png') no-repeat -109px -63px;
+	background-size: 396px 306px;
+	width: 29px;
+	height: 29px;
+}
+
+#btY {
+	background: url('../images/OUYA_BUTTONS.png') no-repeat -182px -63px;
+	background-size: 396px 306px;
+	width: 29px;
+	height: 29px;
+}
+
+#btA {
+	background: url('../images/OUYA_BUTTONS.png') no-repeat -256px -64px;
+	background-size: 396px 306px;
+	width: 29px;
+	height: 29px;
+}
+
+#btRB {
+	background: url('../images/OUYA_BUTTONS.png') no-repeat -92px -210px;
+	background-size: 396px 306px;
+	width: 47px;
+	height: 29px;
+}
+
+#btLB {
+	background: url('../images/OUYA_BUTTONS.png') no-repeat -37px -210px;
+	background-size: 396px 306px;
+	width: 47px;
+	height: 30px;
+}
+
+#stickR-down {
+	background: url('../images/OUYA_BUTTONS.png') no-repeat -235px -158px;
+	background-size: 396px 306px;
+	width: 26px;
+	height: 31px;
+}
+
+#stickR-up {
+	background: url('../images/OUYA_BUTTONS.png') no-repeat -186px -159px;
+	background-size: 396px 306px;
+	width: 26px;
+	height: 31px;
+}
+
+#stickR-right {
+	background: url('../images/OUYA_BUTTONS.png') no-repeat -135px -161px;
+	background-size: 396px 306px;
+	width: 31px;
+	height: 26px;
+}
+
+#stickR-left {
+	background: url('../images/OUYA_BUTTONS.png') no-repeat -87px -161px;
+	background-size: 396px 306px;
+	width: 31px;
+	height: 26px;
+}
