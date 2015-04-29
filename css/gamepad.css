@@ -1,4 +1,8 @@
-
+@font-face {
+	font-family: nokiaCellphone;
+	src: url(../font/nokia-cellphone/nokiafc22.ttf);
+	font-weight: bold;
+}
 #btcleiton, #btucra, #bttiago {
 	overflow: visible;
 }
@@ -67,6 +71,17 @@
 
 .controller {
 	display: none;
+}
+
+.press-start {
+	font-family: nokiaCellphone;
+	font-size: 18px;
+	color: white;
+	text-shadow: 0 0 8px #000;
+}
+
+#press-start {
+	visibility: hidden;
 }
 
 #btO {
