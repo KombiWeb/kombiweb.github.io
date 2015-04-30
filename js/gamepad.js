@@ -128,11 +128,9 @@ function buttons_event() {
 				window.location.href = '/html5.html';
 			}
 			if (gamepad.buttons[1].pressed) { // Button U
-				console.log('pressed');
 				window.location.href = '/css3.html';
 			}
 			if (gamepad.buttons[2].pressed) { // Button Y
-				console.log('pressed');
 				window.location.href = '/jsapi.html';
 			}
 		}
@@ -143,7 +141,7 @@ function buttons_event() {
 			if (gamepad.buttons[0].pressed) { // Button O
 				window.location.href = "#";
 			}
-			
+
 			if (gamepad.buttons[1].pressed) { // Button U
 				window.location.href = "http://whothey.github.io";
 			}
@@ -152,6 +150,16 @@ function buttons_event() {
 				window.location.href = "http://tsukini.github.io";
 			}
 		}
+
+		else if (gamepad.buttons[4].pressed && gamepad.buttons[5].pressed) { // Both Top Buttons
+			$(".controller-footer").show('fast');
+			if (gamepad.buttons[0].pressed)
+				window.location.href = "#!"
+			if (gamepad.buttons[1].pressed)
+				window.location.href = "#!"
+			if (gamepad.buttons[2].pressed)
+				window.location.href = "http://materializecss.com"
+		}
 		
 		if (!gamepad.buttons[4].pressed) {
 			$(".controller-btn").hide('fast');
@@ -159,6 +167,10 @@ function buttons_event() {
 		
 		if (!gamepad.buttons[5].pressed) {
 			$(".controller-menu").hide('fast');
+		}
+
+		if (!gamepad.buttons[4].pressed && !gamepad.buttons[5].pressed) {
+			$(".controller-footer").hide('fast');
 		}
 
 	}else {
