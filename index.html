@@ -44,12 +44,12 @@
 					<span class="controller controller-nav" id="btRB"></span>
 					<li><a href="/html5.html"><span class="controller controller-menu" id="btO"></span>HTML5</a></li>
 					<li><a href="/css3.html"><span class="controller controller-menu" id="btU"></span>CSS3</a></li>
-					<li><a href="/jsapi.html" id="vibrate"><span class="controller controller-menu" id="btY"></span>JS API</a></li>
+					<li><a href="/jsapi.html"><span class="controller controller-menu" id="btY"></span>JS API</a></li>
 				</ul>
 				<ul id="mobile-sidenav" class="side-nav">
 					<li><a href="/html5.html"><span class="controller controller-menu" id="btO"></span>HTML5</a></li>
 					<li><a href="/css3.html"><span class="controller controller-menu" id="btU"></span>CSS3</a></li>
-					<li><a href="/jsapi.html"><span class="controller controller-menu" id="btY"></span>JS API</a></li>
+					<li><a href="#" id="vibrate"><span class="controller controller-menu" id="btY"></span>JS API</a></li>
 					<li><a href="#" id="toggleFullscreen">Toggle Fullscreen</a></li>
 				</ul>
 			</div>
@@ -99,8 +99,10 @@
 		<script type="text/javascript" src="js/gamepad.js"></script>
 		<script type="text/javascript">
 			var vib = document.getElementById('vibrate')
-			vib.onclick = function() {
+			vib.onclick = function(e) {
 				navigator.vibrate(1000)
+
+				return false;
 			}
 		</script>
 	</body>
