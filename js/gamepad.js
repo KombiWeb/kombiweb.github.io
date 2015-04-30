@@ -67,8 +67,8 @@ function connection() {
 	gamepad = navigator.getGamepads()[0];
 	gpName = gamepad.id.indexOf('(')>-1 ? gamepad.id.substring(0, gamepad.id.indexOf('(')-1) : gamepad.id.substring(gamepad.id.lastIndexOf('-')+1);
 	Materialize.toast(gpName+" Connected", 3000,'rounded',function(){});
-	$('.controller').fadeTo('slow', 1, function() {
-		$(this).css({display: 'block'})
+	$('.controller').fadeTo('fast', 1, function() {
+		$(this).css({display: 'inline-block'});
 	});
 	console.log("Gamepad: "+navigator.getGamepads()[0].id+"\nPress 'Start Button' to disconnect!");
 	window.clearInterval(connectTrigger);
@@ -152,6 +152,8 @@ function buttons_event() {
 		}
 
 		else if (gamepad.buttons[4].pressed && gamepad.buttons[5].pressed) { // Both Top Buttons
+			$(".controller-btn").hide('fast');
+			$(".controller-menu").hide('fast');
 			$(".controller-footer").show('fast');
 			if (gamepad.buttons[0].pressed)
 				window.location.href = "#!"
@@ -169,13 +171,15 @@ function buttons_event() {
 			$(".controller-menu").hide('fast');
 		}
 
-		if (!gamepad.buttons[4].pressed && !gamepad.buttons[5].pressed) {
-			$(".controller-footer").hide('fast');
+		if (!gamepad.buttons[4].pressed || !gamepad.buttons[5].pressed) {
+				$(".controller-footer").hide('fast');
 		}
 
 	}else {
 		$(".controller-btn").hide('fast');
 		$(".controller-menu").hide('fast');
+		$(".controller-footer").hide('fast');
+
 	}	
 
 	if (gamepad.axes[4] != 0) {  // Right Stick Y-axis

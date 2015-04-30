@@ -69,9 +69,14 @@
 	overflow: visible;
 }
 
+.controller-footer-title, .controller-footer {
+	margin-right: 2px;
+}
+
 .controller {
 	display: none;
 }
+
 
 .press-start {
 	font-family: nokiaCellphone;
