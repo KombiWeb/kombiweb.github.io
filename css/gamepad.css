@@ -80,6 +80,10 @@
 	text-shadow: 0 0 8px #000;
 }
 
+#gamepadDisplay {
+	display: none;
+}
+
 #press-start {
 	visibility: hidden;
 }
