@@ -161,6 +161,8 @@ function buttons_event() {
 				window.location.href = "#!"
 			if (gamepad.buttons[2].pressed)
 				window.location.href = "http://materializecss.com"
+			if (gamepad.buttons[3].pressed)
+				window.history.back();
 		}
 		
 		if (!gamepad.buttons[4].pressed) {
