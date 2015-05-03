@@ -42,7 +42,10 @@
 				<a class="brand-logo" href="/">KombiWeb</a>
 				<ul id="nav-mobile" class="right hide-on-med-and-down">
 					<span class="controller controller-nav" id="btRB"></span>
-					<li><a href="/html5.html"><span class="controller controller-menu" id="btO"></span>HTML5</a></li>
+					<ul id="dropdown2" class="dropdown-content">
+        				<li><a href="#!" onclick="startVideo()">Video<span class="badge"></span></a></li>
+      				</ul>
+      				<a class="btn dropdown-button" href="#!" data-activates="dropdown2">HTML5<i class="mdi-navigation-arrow-drop-down right"></i></a>
 					<li><a href="/css3.html"><span class="controller controller-menu" id="btU"></span>CSS3</a></li>
 					<li><a href="/jsapi.html"><span class="controller controller-menu" id="btY"></span>JS API</a></li>
 				</ul>
@@ -64,6 +67,11 @@
 				<li><a id="btucra" class="waves-effect waves-light btn" target="_blank" href="http://whothey.github.io"><span class="controller controller-btn" id="btU"></span>Gabriel Henrique Rudey</a></li>
 				<li><a id="bttiago" class="waves-effect waves-light btn" target="_blank" href="http://tsukini.github.io"><span class="controller controller-btn" id="btY"></span>Tiago Adalberto Debastiani</a></li>
 			</ul>
+
+			<video class="responsive-video" autoplay="true" id="idvideo">
+   				 <source src="#" >
+  			</video>
+
 			<!--Gamepad test-->
 			<div class="controller" id="gamepadDisplay"></div>
 			<!---->
@@ -97,6 +105,7 @@
 		<script src="js/dist/materialize.min.js"></script>
 		<script src="js/dist/main.min.js"></script>
 		<script type="text/javascript" src="js/gamepad.js"></script>
+		<script type="text/javascript" src="js/webcam.js"></script>
 		<script type="text/javascript">
 			var vib = document.getElementById('vibrate')
 			vib.onclick = function(e) {
